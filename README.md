@@ -10,6 +10,8 @@ Control your Linux System remotely via Telegram API<br>
 
 # Quick start
 >  cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash install.sh<br>
+
+
 Edit controller.py with your Sender-id and Telegram BOT Token<br>
 
 ------------------
