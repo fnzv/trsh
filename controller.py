@@ -2,7 +2,7 @@
 # Author: Sami Yessou - samiii@protonmail.com
 # Telegram Remote-Shell
 # Control your Linux System remotely via Telegram API
-# Requirements :  apt-get install -y python python-pip && pip install telepot , dig,mtr,nmap,whois
+# Requirements :  apt-get install -y python python-pip && pip install telepot , dig,mtr,nmap,whois ,a Telegram BOT
 
 from pprint import pprint
 import telepot,time,os
