@@ -1,0 +1,2 @@
+# trsh
+Telegram Remote-Shell
