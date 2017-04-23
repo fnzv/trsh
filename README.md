@@ -14,14 +14,14 @@ Control your Linux System remotely via Telegram API
 
 ------------------
 
-To get your Telegram Sender-ID use:
-python rcv-msgs.py
-Example Output:
-[{u'message': {u'chat': {u'first_name': u'Sami',
-                         u'id': 1234567,
-                         u'type': u'private',
-                         u'username': u'YourTelegramUsername'},
-                         
+To get your Telegram Sender-ID use: <br><br>
+python rcv-msgs.py<br><br>
+Example Output:<br>
+[{u'message': {u'chat': {u'first_name': u'Sami',<br>
+                         u'id': 1234567,<br>
+                         u'type': u'private',<br>
+                         u'username': u'YourTelegramUsername'},<br>
+                         <br>
 
 ------------------
 To create a new Telegram bot and get your token use Telegram and message with @BotFather:
