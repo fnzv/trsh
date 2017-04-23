@@ -17,7 +17,7 @@ Edit controller.py with your Sender-id and Telegram BOT Token<br>
 ------------------
 
 To get your Telegram Sender-ID use: <br><br>
-python [rcv-msgs.py] (https://github.com/fnzv/trsh/blob/master/rcv-msgs.py) <br><br>
+python [rcv-msgs.py](https://github.com/fnzv/trsh/blob/master/rcv-msgs.py) <br><br>
 Example Output:<br>
 ```
 [{u'message': {u'chat': {u'first_name': u'Sami',
