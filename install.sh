@@ -6,12 +6,19 @@ echo "Enter your Telegram BOT Token: "
 read -sr TG_BOT_TOKEN
 
 
+sed -i s"/TG-BOT-TOKEN/$TG_BOT_TOKEN/" get-sender-id.py
+
+echo "Trying to find out your sender-id..\n"
+python get-sender-id.py
+
 echo "Enter your Telegram Sender ID: "
 read -sr SENDER_ID
 
 sed -i s"/SENDER-ID-LIST/$SENDER_ID/" controller.py
 
 sed -i s"/TG-BOT-TOKEN/$TG_BOT_TOKEN/" controller.py
+
+
 
 
 echo "Configuring trsh as a service.. \n"
