@@ -1,32 +1,32 @@
-# trsh
-Telegram Remote-Shell 
+## TRSH
 
-----------------
+Telegram Remote-Shell is a python script that allows to comunicate to your Linux server via Telegram API (with bots).
 
-Control your Linux System remotely via Telegram API<br>
+## Requirements
+- Linux System
+- Bot created from @BotFather via Telegram
+- Software Packages: python-pip (to install telepot) & basic linux tools like nmap,dig,mtr (optional)
 
+## Installation
 
------------------
+The setup is quite easy:
+1) Chat with BotFather to create a Bot ( https://telegram.me/botfather ), just launch the command /newbot to get your Telegram Token.
+   Open the bot chat and send some messages to activate the bot.
+2) Launch this command on your Linux system ( WARNING, this command will install the required/missing packages ):
+cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash install.sh
+2.a) You will be asked to insert your Telegram Bot Token aquired on the first step.
+2.b) The script will guess your Sender-id based on the messages you send on the first step.
+2.c) If you cannot figure out how to find your Sender-id manually launch the script get-sender-id.py from commandline and you will get a raw output containing chat_id,sender_id,username,type
 
-# Quick start
-``` cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash install.sh```
+## Tests
 
+The following scripts are being tested on Ubuntu 16.04 LTS, Raspian Jessie and marked as working.
 
-Edit controller.py with your Sender-id and Telegram BOT Token<br>
+## Contributors
 
-------------------
+Feel free to open issues or send me an email
 
-To get your Telegram Sender-ID use: <br><br>
-python [rcv-msgs.py](https://github.com/fnzv/trsh/blob/master/rcv-msgs.py) <br><br>
-Example Output:<br>
-```
-[{u'message': {u'chat': {u'first_name': u'Sami',
-                         u'id': 1234567,
-                         u'type': u'private',
-                         u'username': u'YourTelegramUsername'},
-                         
-```
-------------------
-To create a new Telegram bot and get your token use Telegram and message with @BotFather:<br>
-/newbot<br>
-And you will get your Telegram Bot Token, something like: 1234566:AEFKJLSLDGFJDLSFKGADS-45LSADJLK34<br>
+## License
+
+Code distributed under MIT licence.
+
