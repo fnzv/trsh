@@ -8,8 +8,8 @@ read -sr TG_BOT_TOKEN
 
 sed -i s"/TG-BOT-TOKEN/$TG_BOT_TOKEN/" get-sender-id.py
 
-echo "Trying to find out your sender-id..\n"
-python get-sender-id.py
+echo "Trying to find out your Telegram sender-id..\n"
+python get-sender-id.py  | grep "'id'" | uniq -c | awk '{ print $3 }' | sed s'/,//'
 
 echo "Enter your Telegram Sender ID: "
 read -sr SENDER_ID
