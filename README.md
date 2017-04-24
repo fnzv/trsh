@@ -10,14 +10,20 @@ Telegram Remote-Shell is a python script that allows to comunicate to your Linux
 ## Installation
 
 The setup is quite easy: <br>
+
 1) Chat with BotFather to create a Bot ( https://telegram.me/botfather ), just launch the command /newbot to get your Telegram Token. <br>
-   Open the bot chat and send some messages to activate the bot. <br>
+ Open the bot chat and send some messages to activate the bot. <br>
+
 2) Launch this command on your Linux system ( WARNING, this command will install the required/missing packages ): <br>
+
 ```
-cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash install.sh <br>
+cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash install.sh 
 ```
+
 2.a) You will be asked to insert your Telegram Bot Token aquired on the first step. <br>
+
 2.b) The script will guess your Sender-id based on the messages you send on the first step. <br>
+
 2.c) If you cannot figure out how to find your Sender-id manually launch the script get-sender-id.py from commandline and you will get a raw output containing chat_id,sender_id,username,type <br>
 
 ## Tests
