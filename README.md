@@ -20,9 +20,9 @@ The setup is quite easy: <br>
 cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash install.sh 
 ```
 
-### WARNING: this command will install the required/missing packages ( dnsutils, python-pip, python, nmap, mtr, pip-telepot )
+##### WARNING: this command will install the required/missing packages ( dnsutils, python-pip, python, nmap, mtr, pip-telepot )
 
-### NOTES:
+##### NOTES:
 
 - You will be asked to insert your Telegram Bot Token aquired on the first step. <br>
 
