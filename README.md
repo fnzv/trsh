@@ -20,7 +20,7 @@ The setup is quite easy: <br>
 cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash install.sh 
 ```
 
-##### WARNING: this command will install the required/missing packages ( dnsutils, python-pip, python, nmap, mtr, pip-telepot )
+##### WARNING: this command will install the required/missing packages ( supervisor, dnsutils, python-pip, python, nmap, mtr, pip-telepot )
 
 ##### NOTES:
 
@@ -29,6 +29,8 @@ cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash instal
 - The script will guess your Sender-id based on the messages you send on the first step. <br>
 
 - If you cannot figure out how to find your Sender-id manually launch the script get-sender-id.py from commandline and you will get a raw output containing chat_id,sender_id,username,type <br>
+
+After you finished the installation the python script will run as a system service with supervisor.
 
 ## Tests
 
