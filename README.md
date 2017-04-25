@@ -14,13 +14,15 @@ The setup is quite easy: <br>
 * Chat with BotFather to create a Bot ( https://telegram.me/botfather ), just launch the command /newbot to get your Telegram Token. <br>
  Open the bot chat and send some messages to activate the bot. <br>
 
-* Launch this command on your Linux system ( WARNING, this command will install the required/missing packages ): <br>
+* Launch this command on your Linux system: <br>
 
 ```
 cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash install.sh 
 ```
 
-NOTES:
+# WARNING: this command will install the required/missing packages ( dnsutils, python-pip, python, nmap, mtr, pip-telepot )
+
+# NOTES:
 
 - You will be asked to insert your Telegram Bot Token aquired on the first step. <br>
 
