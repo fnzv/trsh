@@ -1,7 +1,7 @@
 ## TRSH
 
 Telegram Remote-Shell is a python script that allows to comunicate to your Linux server via Telegram API (with bots).
-![Telegram](/img/telegrambot.jpg?raw=true "Telegram")
+![Telegram](/img/telegrambot-img.jpg?raw=true "Telegram")
 ## Requirements
 - Linux System
 - Bot created from @BotFather via Telegram
