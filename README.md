@@ -32,6 +32,17 @@ cd /home && git clone https://github.com/fnzv/trsh.git && cd trsh && bash instal
 
 After you finished the installation the python script will run as a system service with supervisor.
 
+## Usage
+
+- /ping - Tests connectivity 
+- /dig - Resolve the given domain, supports RR.. example /dig A google.com or /dig MX google.com
+- /mtr - Execute a mtr with a following report
+- /nmap - Execute a nmap -Pn -A
+- /curl - Execute a curl request
+- /whois - Whois lookup
+- /sysinfo - Display generic system information (disk usage, network & memory)
+- /sh - Execute a command with Bash.. example /sh cat namefile , /sh ps auxf | grep ssh
+
 ## Tests
 
 The following scripts are being tested on Ubuntu 16.04 LTS, Raspian Jessie and marked as working.
