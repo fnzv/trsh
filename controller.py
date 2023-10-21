@@ -1,5 +1,6 @@
 #!/usr/bin/python
 # Author: Sami Yessou - samiii@protonmail.com
+# Co-Author: Iakim github.com/iakim
 # Telegram Remote-Shell
 # Control your Linux System remotely via Telegram API
 # Requirements :  apt-get install -y python python-pip && pip install telepot , dig,mtr,nmap,whois ,a Telegram BOT
@@ -61,10 +62,10 @@ def handle(msg):
             output=os.popen("df -h && free -m && netstat -tunlp").read()
             bot.sendMessage(chat_id, output)
 
-
       if command == '/sh':
-            cmd = str(args[1])
-            output=os.popen(cmd).read()
+            args = [arg for arg in args[1:] if arg.strip() != '']
+            cmd = ' '.join(args)
+            output = os.popen(cmd).read()
             bot.sendMessage(chat_id, output)
 
 bot = telepot.Bot('TG-BOT-TOKEN')
